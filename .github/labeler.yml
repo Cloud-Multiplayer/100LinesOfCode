@@ -1,47 +1,49 @@
 # Label PRs based on changed files
 
 documentation:
-  - '**/*.md'
-  - 'docs/**/*'
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.md', 'docs/**/*']
 
 python:
-  - '**/*.py'
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.py']
 
 javascript:
-  - '**/*.js'
-  - '**/*.jsx'
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.js', '**/*.jsx']
 
 typescript:
-  - '**/*.ts'
-  - '**/*.tsx'
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.ts', '**/*.tsx']
 
 java:
-  - '**/*.java'
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.java']
 
 cpp:
-  - '**/*.cpp'
-  - '**/*.cc'
-  - '**/*.cxx'
-  - '**/*.h'
-  - '**/*.hpp'
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.cpp', '**/*.cc', '**/*.cxx', '**/*.h', '**/*.hpp']
 
 c:
-  - '**/*.c'
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.c']
 
 go:
-  - '**/*.go'
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.go']
 
 rust:
-  - '**/*.rs'
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.rs']
 
 web:
-  - '**/*.html'
-  - '**/*.css'
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.html', '**/*.css']
 
 bash:
-  - '**/*.sh'
-  - '**/*.bash'
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.sh', '**/*.bash']
 
 github-actions:
-  - '.github/workflows/**/*'
-  - '.github/**/*'
+  - changed-files:
+      - any-glob-to-any-file: ['.github/workflows/**/*', '.github/**/*']
